@@ -1,19 +1,13 @@
 package com.boots.repository;
 
-//import com.boots.entity.User;
-//import org.springframework.data.jpa.repository.JpaRepository;
-//
-//public interface UserRepository extends JpaRepository<User, Long> {
-//    User findByUsername(String username);
-//}
-import org.springframework.data.jpa.repository.JpaRepository;
 import com.boots.entity.User;
-
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-    User findByUsername(String username);
+    // Удален дублирующий метод, оставлен метод возвращающий Optional
+    Optional<User> findByUsername(String username);
 
-    // Добавьте этот метод для поддержки поиска по ID больше заданного
-    List<User> findByIdGreaterThan(Long id);
+    // Метод для поиска пользователя по электронной почте
+    Optional<User> findByEmail(String email);
 }

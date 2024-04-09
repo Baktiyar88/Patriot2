@@ -5,3 +5,47 @@ table {
 table, th, td {
     border: 1px solid black;
 }
+/* Additional custom styles */
+body {
+    background-color: #f8f9fa; /* Keep the light background */
+}
+.navbar {
+    background-color: #0056b3; /* Example blue color */
+}
+.navbar-brand {
+    height: 60px; /* Adjust to the size of your logo */
+    padding: 5px;
+}
+.navbar-brand img {
+    max-height: 100%;
+    max-width: auto; /* Adjust to keep logo aspect ratio */
+}
+.news-card {
+    background-color: #fff; /* White background for the card */
+    color: #0056b3; /* Blue text color */
+    border: none;
+}
+.btn-primary {
+    background-color: #ffcd00; /* Example yellow color */
+    color: #0056b3; /* Blue text color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #e2b700; /* Darker yellow on hover */
+}
+body {
+    background-color: #f8f9fa;
+}
+.container {
+    margin-top: 50px;
+}
+.news-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.news-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
