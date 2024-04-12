@@ -67,6 +67,13 @@
                         <strong>${comment.user.username}:</strong> ${comment.content}
                         <br>
                         <small>добавлен ${comment.commentDate}</small>
+                        <!-- Delete Button -->
+                        <sec:authorize access="hasAuthority('ROLE_ADMIN')">
+                            <form action="${pageContext.request.contextPath}/admin/comments/delete/${comment.id}" method="post">
+                                <input type="hidden" name="_method" value="delete" />
+                                <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
+                            </form>
+                        </sec:authorize>
                     </div>
                 </c:forEach>
             </div>

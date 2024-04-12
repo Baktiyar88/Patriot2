@@ -25,7 +25,9 @@ public class CommentService {
         return commentRepository.save(comment);
     }
 
-    // Дополнительные методы для удаления или обновления комментариев, если необходимо
+    public void deleteComment(Long commentId) {
+        commentRepository.deleteById(commentId);
+    }
 
 
     public List<Comment> findByNewsId(Long newsId) {
