@@ -1,7 +1,7 @@
-# Shoe Store on Spring Boot
+#Store on Spring Boot
 
 ## Project Description
-This is a web application "Shoe Store" implemented with Spring Boot. It allows users to browse and purchase shoes online. Key features may include:
+This is a web application "Store" implemented with Spring Boot. It allows users to browse and purchase shoes online. Key features may include:
 - User registration and login.
 - Role-based access control (e.g., USER and ADMIN).
 - Product catalog with categories, filtering, and search.
