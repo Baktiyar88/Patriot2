@@ -7,11 +7,6 @@ This is a web application "Store" implemented with Spring Boot. It allows users 
 - Product catalog with categories, filtering, and search.
 - Shopping cart and order checkout process.
 - Administration panel for managing products, orders, and users.
-- News or blog section (if implemented).
-- REST API endpoints (optional).
-- Integration with payment gateways (optional).
-
-> **Note:** Adapt the sections below to match your actual implementation, entity names, endpoints, and business logic.
 
 ## Technologies and Dependencies
 - Java 8+ (or a compatible version with your Spring Boot version).
